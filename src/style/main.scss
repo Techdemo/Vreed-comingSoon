@@ -1,21 +1,15 @@
 @font-face {
   font-family: "Goldway";
-  src: url("/src/includes/fonts/GoldplayMedium.otf") format('otf');
-  font-weight: 100 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Goldway";
-  src: url("/src/includes/fonts/GoldplayBold.otf") format('otf');
-  font-weight: 600 700;
-  font-style: normal;
+  src: url("/src/includes/fonts/GoldplayMedium.otf") format("opentype");
+  font-family: "Goldway-black";
+  src: url("/src/includes/fonts/Goldplay-Black.ttf") format("truetype");
 }
 
 body {
   font-family: 'Goldway', sans-serif;
   max-width: 1480px;
   margin: auto;
+  background-color: rgb(43, 42, 42);
 }
 
 
@@ -34,5 +28,5 @@ header {
 h1 {
   text-transform: uppercase;
   color: #FFCC00;
-  font-weight: 600;
+  font-family: 'Goldway-black', sans-serif;
 }
