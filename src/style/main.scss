@@ -1,9 +1,32 @@
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  text-align: center;
+@font-face {
+  font-family: "Goldway";
+  src: url("/src/includes/fonts/GoldplayMedium.otf") format("opentype");
+  font-family: "Goldway-black";
+  src: url("/src/includes/fonts/Goldplay-Black.ttf") format("truetype");
 }
 
-img {
-  display: block;
-  margin: 50px auto;
+body {
+  font-family: 'Goldway', sans-serif;
+  max-width: 1480px;
+  margin: auto;
+  background-color: rgb(43, 42, 42);
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1480px;
+  margin: auto;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #FFCC00;
+  font-family: 'Goldway-black', sans-serif;
 }
