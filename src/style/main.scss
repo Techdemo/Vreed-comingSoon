@@ -26,7 +26,7 @@ header {
   justify-content: flex-start;
   background-color: rgba(0,0,0,0);
   width: 100%;
-  max-width: 1480px;
+  max-width: 1780px;
   margin: auto;
   padding: 20px;
   margin-bottom: -100px;
@@ -38,17 +38,20 @@ header {
 
 .hero {
   display: flex;
-  background: url('/includes/img/background_vreed.svg');
-  background-size: cover ;
+  background: url('/includes/img/background-test.svg');
+  background-size: cover;
   padding-bottom: 370px;
 }
 .coming-soon {
   max-width: 1480px;
   margin: auto;
-  width: 70%;
+  width: 50%;
   p {
     font-size: 24px;
   }
+}
+.usp {
+  width: 25%;
 }
 
 ul {
@@ -89,6 +92,7 @@ h1 {
 .project-background {
   width: 100%;
   background-color: #FFCC00;
+  padding:0;
 }
 a {
   color: #FFCC00;
@@ -117,10 +121,10 @@ input[type=submit] {
 
 .latest-projects {
   display: block;
-  width: 95vw;
+  width: 75vw;
   text-align: right;
   margin-top: 0;
-  padding-top: 100px;
+  // padding-top: 100px;
   margin-bottom: 0;
 }
 .latest-projects:nth-last-of-type(1) {
@@ -134,7 +138,7 @@ input[type=submit] {
   display: block;
   width: 100%;
   height: 550px;
-  background: url('/includes/img/project_curve.svg');
+  background: url('/includes/img/latest_project_test.svg');
   background-size: cover ;
   margin-top: -2px;
 }
@@ -148,7 +152,7 @@ input[type=submit] {
 .project-content {
   margin-left: 16px;
   h2 {
-    color: #FFCC00;
+    color: black;
     font-size: 60px;
     text-transform: uppercase;
     font-family: "goldplayblack";
@@ -205,5 +209,60 @@ footer {
   text-align: center;
   p {
     padding-top: 60px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .mob-head {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background: url('/includes/img/latest_project_test.svg');
+    background-size: cover ;
+    margin-top: -2px;
+  }
+  .usp {
+    display: none;
+  }
+  .coming-soon {
+    width: 100%;
+    margin-top: 100px;
+    h1 {
+      font-size: 140px;
+      line-height: 120px;
+    }
+    p {
+      font-size: 18px;
+      // width: 600px;
+    }
+    input[type=email] {
+      width: 70%;
+    }
+    button {
+      width: 100%;
+    }
+    .email-text {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  .latest-projects {
+    font-size: 120px;
+  }
+  .projects {
+    flex-direction: column;
+    margin-top: -100px;
+    img {
+      width: 80%;
+      margin: auto
+    }
+    .project-content {
+      margin: auto;
+      margin-left: 10%;
+      padding: 0;
+    }
+  }
+  .project-curve {
+    height: 200px;
   }
 }
