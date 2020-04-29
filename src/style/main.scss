@@ -1,32 +1,209 @@
 @font-face {
-  font-family: "Goldway";
-  src: url("/src/includes/fonts/GoldplayMedium.otf") format("opentype");
-  font-family: "Goldway-black";
-  src: url("/src/includes/fonts/Goldplay-Black.ttf") format("truetype");
+  font-family: "Goldplay";
+  src: url("/includes/fonts/GoldplayMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'goldplayblack';
+  src: url('/includes/fonts/goldplay_black-webfont.woff2') format('woff2'),
+       url('/includes/fonts/goldplay_black-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+.yellow {
+  color: #FFCC00;
 }
 
 body {
-  font-family: 'Goldway', sans-serif;
-  max-width: 1480px;
+  font-family: 'Goldplay', sans-serif;
+  // max-width: 1480px;
   margin: auto;
-  background-color: rgb(43, 42, 42);
 }
 
 
 header {
   display: flex;
   justify-content: flex-start;
+  background-color: rgba(0,0,0,0);
   width: 100%;
   max-width: 1480px;
   margin: auto;
+  padding: 20px;
+  margin-bottom: -100px;
   img {
     width: 200px;
     height: auto;
   }
 }
 
+.hero {
+  display: flex;
+  background: url('/includes/img/background_vreed.svg');
+  background-size: cover ;
+  padding-bottom: 370px;
+}
+.coming-soon {
+  max-width: 1480px;
+  margin: auto;
+  width: 70%;
+  p {
+    font-size: 24px;
+  }
+}
+
+ul {
+  color: white;
+  font-family: goldplayblack, sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 150px 50px 0 0;
+  li {
+    margin: 10px;
+  }
+  li:hover {
+    color: black;
+    transition: .2s ease;
+  }
+}
+
 h1 {
   text-transform: uppercase;
+  color: black;
+  font-family: goldplayblack, sans-serif;
+  font-weight: bold;
+  font-size: 150px;
+  width: 600px;
+  display: inline-block;
+  line-height: 120px;
+  margin-bottom: 50px;
+}
+.email-text {
+  width: 625px  ;
+}
+
+.soon {
   color: #FFCC00;
-  font-family: 'Goldway-black', sans-serif;
+}
+.project-background {
+  width: 100%;
+  background-color: #FFCC00;
+}
+a {
+  color: #FFCC00;
+  font-weight: bold;
+}
+
+input[type=email] {
+  width: 380px;
+  height: 52px;
+  border-radius: 50px;
+  border: 3px #FFCC00 solid;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+input[type=submit] {
+  width: 180px;
+  height: 60px;
+  border-radius: 53px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: black;  
+  border: none;
+}
+
+.latest-projects {
+  display: block;
+  width: 95vw;
+  text-align: right;
+  margin-top: 0;
+  padding-top: 100px;
+  margin-bottom: 0;
+}
+.latest-projects:nth-last-of-type(1) {
+  padding-top: 0px;
+}
+
+.project {
+  color: white;
+}
+.project-curve {
+  display: block;
+  width: 100%;
+  height: 550px;
+  background: url('/includes/img/project_curve.svg');
+  background-size: cover ;
+  margin-top: -2px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.project-content {
+  margin-left: 16px;
+  h2 {
+    color: #FFCC00;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: "goldplayblack";
+    margin: 30px 10px 0px 10px;
+  }
+  ul, li {
+    color: black;
+    font-size: 18px;
+  }
+  a {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none; /* Remove default bullets */
+    margin: 0;
+    padding-left: 16px;
+    margin-bottom: 32px;
+  }
+  ul li::before {
+    content: "\2B24";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FFCC00; /* Change the color */
+    font-weight: bolder; /* If you want it to be bold */
+    font-size: 16px;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 30px; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+}
+
+.catchphrase {
+  text-align: center;
+  width: 100%;
+  font-size: 26px;
+  margin-top: 250px;
+  p {
+    margin: 0;
+  }
+  .beeldmerk {
+    width: 80px;
+    height: auto;
+  }
+}
+
+footer {
+  background: url('/includes/img/footer-background.svg');
+  background-size: cover;
+  color: white;
+  height: 100px;
+  text-align: center;
+  p {
+    padding-top: 60px;
+  }
 }
