@@ -289,3 +289,41 @@ footer {
     visibility: visible;
   }
 }
+
+@media(max-width: 700px) {
+  .logo {
+    width: 250px;
+  }
+  .coming-soon {
+    // max-width: 500px;
+    h1 {
+      font-size: 100px;
+      line-height: 80px;
+      width: auto;
+    }
+    .email-text {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+  .latest-projects {
+    max-width: 600px;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: left;
+    padding: 0px 20px;
+  }
+  .project {
+    line-height: 80px;
+  }
+  .projects > .project-content {
+    margin: 0;
+    padding: 20px;
+  }
+  .catchphrase {
+    padding: 15px;
+    width: auto;
+  }
+}
