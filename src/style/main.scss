@@ -28,11 +28,12 @@ header {
   width: 100%;
   max-width: 1780px;
   margin: auto;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: -100px;
   img {
     width: 200px;
     height: auto;
+    padding: 20px;
   }
 }
 
@@ -52,6 +53,7 @@ header {
 }
 .usp {
   width: 25%;
+  visibility: hidden;
 }
 
 ul {
@@ -166,6 +168,9 @@ input[type=submit] {
     padding: 10px 20px;
     background-color: black;
     color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: goldplayblack, sans-serif;
     border-radius: 100px;
     text-decoration: none;
     text-transform: uppercase;
@@ -196,6 +201,8 @@ input[type=submit] {
     margin: 0;
   }
   .beeldmerk {
+    margin-top: 30px;
+    margin-bottom: 10px;
     width: 80px;
     height: auto;
   }
@@ -213,20 +220,13 @@ footer {
 }
 
 @media(max-width: 1200px) {
-  .mob-head {
-    display: block;
-    width: 100%;
-    height: 150px;
-    background: url('/static/img/latest_project_test.svg');
-    background-size: cover ;
-    margin-top: -2px;
-  }
   .usp {
     display: none;
   }
   .coming-soon {
     width: 100%;
     margin-top: 100px;
+    padding: 20px;
     h1 {
       font-size: 140px;
       line-height: 120px;
@@ -242,7 +242,7 @@ footer {
       width: 100%;
     }
     .email-text {
-      width: 100%;
+      width: 80%;
       padding: 20px;
     }
   }
@@ -264,5 +264,28 @@ footer {
   }
   .project-curve {
     height: 200px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .mob-head {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background: url('/static/img/latest_project_test.svg');
+    background-size: cover;
+    margin-top: -2px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .email-text {
+    max-width: 80%;
+  }
+}
+
+@media(min-width: 1550px) {
+  .usp {
+    visibility: visible;
   }
 }
