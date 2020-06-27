@@ -327,3 +327,10 @@ footer {
     width: auto;
   }
 }
+
+.hidden {
+  visibility: hidden;
+  width: 0;
+  height:0;
+  margin: 0;
+}
