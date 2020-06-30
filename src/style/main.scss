@@ -124,6 +124,9 @@ input[type=submit] {
   color: white;
   background-color: black;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .latest-projects {
@@ -312,8 +315,8 @@ footer {
   .coming-soon {
     // max-width: 500px;
     h1 {
-      font-size: 100px;
-      line-height: 80px;
+      font-size: 80px;
+      line-height: 60px;
       width: auto;
     }
     .email-text {
@@ -325,8 +328,8 @@ footer {
 
   .latest-projects {
     max-width: 600px;
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 60px;
+    line-height: 60px;
     text-align: left;
     padding: 0px 20px;
   }
@@ -336,6 +339,9 @@ footer {
   .projects > .project-content {
     margin: 0;
     padding: 20px;
+  }
+  .project-content > h2 {
+    font-size: 42px;
   }
   .catchphrase {
     padding: 15px;
