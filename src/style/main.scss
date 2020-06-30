@@ -21,6 +21,11 @@ body {
 }
 
 
+.projects img {
+  max-width: 748px;
+  border-radius: 15px;
+}
+
 header {
   display: flex;
   justify-content: flex-start;
@@ -146,10 +151,17 @@ input[type=submit] {
 }
 
 .projects {
-  display: flex;
-  justify-content: center;
+  max-width: 100vw;
   margin-top: -200px;
 }
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
 
 .project-content {
   margin-left: 16px;
@@ -222,6 +234,9 @@ footer {
 @media(max-width: 1200px) {
   .usp {
     display: none;
+  }
+  .portfolio-item {
+    flex-direction: column;
   }
   .coming-soon {
     width: 100%;
