@@ -165,6 +165,13 @@ input[type=submit] {
   margin-bottom: 50px;
 }
 
+.portfolio-item:nth-of-type(odd) {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
 
 .project-content {
   margin-left: 16px;
